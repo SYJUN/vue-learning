@@ -1,7 +1,3 @@
-<<<<<<< 468d28e989c87d9387795d9a0122aff40600f6f4
-# vue-learning
-vue learning
-=======
 # vue-larning
 
 > vue larning
@@ -23,4 +19,3 @@ npm run build --report
 ```
 
 For detailed explanation on how things work, checkout the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
->>>>>>> vue learning
