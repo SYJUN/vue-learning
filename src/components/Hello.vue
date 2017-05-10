@@ -1,5 +1,6 @@
 <template>
   <div class="hello">
+    <headerBack :title="returnTitle()"></headerBack>
     <h1>{{ msg }}</h1>
     <h2>Essential Links</h2>
     <ul>
@@ -17,19 +18,28 @@
       <li><a href="http://vue-loader.vuejs.org/" target="_blank">vue-loader</a></li>
       <li><a href="https://github.com/vuejs/awesome-vue" target="_blank">awesome-vue</a></li>
     </ul>
-    <!-- <a href="#" v-link="{path:'#/test'}">跳转test页</a> -->
   </div>
 </template>
 
 <script>
+/* eslint-disable no-new */
+import headerBack from '@/components/common/header_back.vue';
 export default {
   name: 'hello',
   data () {
     return {
       msg: 'Welcome to Your Vue.js App'
+    };
+  },
+  methods: {
+    returnTitle () {
+      return this.$route.params.title;
     }
+  },
+  components: {
+    headerBack
   }
-}
+};
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
