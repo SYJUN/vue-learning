@@ -30,7 +30,7 @@ module.exports = {
       : config.dev.assetsPublicPath,
   },
   resolve: {
-    extensions: ['.js', '.vue', '.json', '.scss'],
+    extensions: ['.js', '.vue', '.json', '.scss', '.css'],
     alias: {    // 创建import或require的别名，一些常用的，路径长的都可以用别名
       'vue$': 'vue/dist/vue.esm.js',
       '@': resolve('src'),

@@ -5,6 +5,9 @@ import App from './App';
 import router from './router';
 import VueMaterial from 'vue-material';
 
+// require('./assets/lib/index');
+// require('./assets/scss/index');
+
 // vue 全局配置
 // 取消 Vue 所有的日志与警告。
 Vue.config.silent = true;
