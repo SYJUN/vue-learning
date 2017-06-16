@@ -5,8 +5,7 @@ import App from './App';
 import router from './router';
 import VueMaterial from 'vue-material';
 
-// require('./assets/lib/index');
-// require('./assets/scss/index');
+require('./assets/scss/index');
 
 // vue 全局配置
 // 取消 Vue 所有的日志与警告。
@@ -19,7 +18,7 @@ Vue.config.productionTip = false;
 
 
 /* 注册主题 */
-Vue.use(VueMaterial);
+Vue.use(VueMaterial);src/assets/scss/index.scss
 Vue.material.registerTheme('default', {
   primary: 'blue',
   accent: 'red',
